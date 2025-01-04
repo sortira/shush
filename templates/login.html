@@ -9,13 +9,35 @@
         <h1>Join a Chat Room</h1>
         <form action="/chat" method="POST" class="mt-4">
             <div class="mb-3">
-                <input type="text" name="room_id" class="form-control" placeholder="Room ID" required>
+                <input 
+                    type="text" 
+                    name="room_id" 
+                    class="form-control" 
+                    placeholder="Room ID" 
+                    value="{{ room_id }}" 
+                    readonly 
+                    required
+                >
             </div>
             <div class="mb-3">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <input 
+                    type="password" 
+                    name="password" 
+                    class="form-control" 
+                    placeholder="Password" 
+                    value="{{ password }}" 
+                    readonly 
+                    required
+                >
             </div>
             <div class="mb-3">
-                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                <input 
+                    type="text" 
+                    name="username" 
+                    class="form-control" 
+                    placeholder="Enter Your Username" 
+                    required
+                >
             </div>
             <button type="submit" class="btn btn-primary">Join Chat</button>
         </form>

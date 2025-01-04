@@ -40,7 +40,23 @@ def chat():
         else:
             return "Invalid Room ID or Password", 401
 
-    return render_template('login.html')
+    # Handle GET request
+    room_id = request.args.get('room_id', '')  # Get pre-filled room_id
+    password = request.args.get('password', '')  # Get pre-filled password
+
+    return render_template('login.html', room_id=room_id, password=password)
+
+
+@app.route('/join_chat', methods=['GET'])
+def join_chat():
+    room_id = request.args.get('room_id')
+    password = request.args.get('password')
+
+    if not room_id or not password:
+        return "Room ID and password are required.", 400
+
+    # Redirect to login page with room_id and password as query parameters
+    return redirect(url_for('chat', room_id=room_id, password=password))
 
 
 @app.route('/send_message', methods=['POST'])
