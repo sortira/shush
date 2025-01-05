@@ -11,17 +11,18 @@
         <h1>Chat Room: {{ room_id }}</h1>
         <h3>Welcome, {{ username }}</h3>
         <div id="chatBox" class="mt-4 p-3 border bg-light text-dark" style="height: 300px; overflow-y: scroll;"></div>
-        <form id="messageForm" class="mt-3">
+        <div id="imgBox"></div>
+	    <form id="messageForm" class="mt-3">
             <div class="input-group">
                 <input type="text" id="messageInput" class="form-control" placeholder="Type a message" required>
                 <button type="submit" class="btn btn-primary">Send</button>
+		<button id = "uploadImage" onclick="uploadImg()">Upload Image</button>
             </div>
         </form>
         <button id="exitChatBtn" class="btn btn-danger mt-3">Exit Chat</button>
     </div>
 
     <script>
-
         window.addEventListener('beforeunload', (e) => {
             fetch('/exit_chat', {
                 method: 'POST',
@@ -36,6 +37,9 @@
         const messageForm = document.getElementById('messageForm');
         const messageInput = document.getElementById('messageInput');
         const exitChatBtn = document.getElementById('exitChatBtn');
+	    //const uploadBtn = document.getElementById('uploadImage');
+	    //const uploadBox = document.getElementById('imgBox');
+
 
         function fetchMessages() {
             fetch('/get_messages')
@@ -47,7 +51,6 @@
                     });
                 });
         }
-
         messageForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const message = messageInput.value;
@@ -73,7 +76,27 @@
                 window.location.href = '/';
             });
         });
+        /*const img_form = document.createElement("form");
+        //img_form.method = method || 'post';
+        //img_form.path = '/postImage'
 
+        const img_form_input = document.createElement("input");
+        img_form_input.type = "file";
+
+        const submitButton = document.createElement("input");
+        submitButton.type = "submit"
+	    
+        img_form.appendChild(img_form_input);
+        img_form.appendChild(submitButton);
+        
+        function uploadImg()
+	    {
+	        console.log("AAAAAH");
+            if(imgUp)
+            {
+                
+            }            
+	    }*/
         setInterval(fetchMessages, 500);
     </script>
 </body>
