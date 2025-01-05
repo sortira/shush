@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sue+Ellen+Francisco&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bkgrnd3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.heading{
+    color: rgb(207, 174, 131);
+    font-family: "Nothing You Could Do", serif;
+    font-size: 70px;
+}
+
+.form-control{
+    background-color: rgb(180, 167, 150);
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover{
+    background-color: rgb(167, 112, 44);
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    background-color: #272727;
+    color: rgb(255, 222, 178);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Karla", serif;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Karla", serif;
+}
