@@ -82,7 +82,7 @@ def send_message():
             finalMessage = ""
             stars = ""
             #object that stores the first occurence of matched regex string
-            match = re.search(regx,message)
+            match = re.search(regx,message,re.IGNORECASE)
             while(match):
                 finalMessage += message[0:match.span()[0]]
                 stars = ""
