@@ -91,7 +91,7 @@ def send_message():
                     stars += "*"
                 finalMessage += " " + stars[1:len(stars)-1] + " "
                 message = message[match.span()[1]:]
-                match = re.search(regx,message)
+                match = re.search(regx,message,re.IGNORECASE)
             if(len(message) > 0):
                 finalMessage += message
             message = finalMessage
