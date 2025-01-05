@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sue+Ellen+Francisco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     display: flex;
@@ -15,8 +17,9 @@ body{
 
 .heading{
     color: rgb(207, 174, 131);
-    font-family: "Nothing You Could Do", serif;
-    font-size: 70px;
+    font-family: "Montserrat", serif;
+    font-size: 100px;
+    font-weight: 250;
 }
 
 .form-control{
@@ -44,9 +47,9 @@ body{
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 20px;
-    font-family: "Karla", serif;
+    font-family: "Montserrat", serif;
     font-weight: 200;
     cursor: pointer;
     transition: 0.5s;
-    font-family: "Karla", serif;
+    font-family: "Montserrat", serif;
 }
