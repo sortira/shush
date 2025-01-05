@@ -26,9 +26,7 @@ def create_chat_room():
     return jsonify({"room_id": room_id, "password": password})
 
 
-@app.route('/postImage', methods=['POST'])
-def upload():
-    print("HELLO")
+
 
 @app.route('/chat', methods=['GET', 'POST'])
 def chat():
