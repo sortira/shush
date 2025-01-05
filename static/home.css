@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("bkgrnd2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.heading{
+    font-size: 150px;
+    font-family: "Montserrat", serif;
+    font-weight: 250;
+    color: rgb(207, 174, 131);
+}
+
+
+.shh{
+    color: rgb(152, 127, 98);
+    font-size: 60px;
+    font-family: "Montserrat", serif;
+    font-weight: 80;
+}
+
+.obj{
+    color: rgb(152, 133, 111);
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+    font-weight: 40;
+}
+
+.btn:hover{
+    background-color: rgb(167, 112, 44);
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    background-color: #272727;
+    color: rgb(255, 222, 178);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Amatic SC", serif;
+    font-weight: 50;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Karla", serif;
+}
