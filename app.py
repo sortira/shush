@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify, s
 import uuid, secrets
 import firebase_admin
 import re
+import time
 from firebase_admin import credentials, firestore
-
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(24)
@@ -98,7 +98,7 @@ def send_message():
     # Add the message to Firestore
     chat_ref = db.collection('chat_records').document(room_id)
     chat_ref.update({
-        'messages': firestore.ArrayUnion([{"username": username, "message": message}])
+        'messages': firestore.ArrayUnion([{"username": username, "message": message, "timestamp": time.time()}])
     })
 
     return jsonify({"status": "success"})
