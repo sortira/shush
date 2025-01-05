@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: pop;
+    src: url(Poppins-Regular.ttf);
+}
+body{
+    background-color: rgb(9 9 11);
+    font-family: pop;
+}
+.Main{
+    text-align: center;
+    width: 400px;
+    margin: 25vh auto;
+    padding: 50px;
+    padding-top: 10px;
+    background-color: rgb(24 24 27);
+    border-radius: 30px;
+    color: white;
+}
+.form-control{
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid rgb(254 202 202);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+}
+button{
+    all:unset;
+    width: 300px;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(248 113 113);
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin-top: 10px;
+}
+
+
