@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bkgrnd3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.heading{
+    color: rgb(207, 174, 131);
+    font-family: "Montserrat", serif;
+    font-size: 100px;
+    font-weight: 250;
+}
+
+.form-control{
+    background-color: rgb(180, 167, 150);
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover{
+    background-color: rgb(167, 112, 44);
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    background-color: #272727;
+    color: rgb(255, 222, 178);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Montserrat", serif;
+}
